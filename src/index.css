@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #ff8b68;
+  --hover-bg: #e9ecef;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a2456;
+  padding: 20px;
+  width: 98vw;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 50;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+
+.header-right a {
+  color: var(--main-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.select-container {
+  background-color: transparent;
+  color: var(--main-color);
+  border: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  outline: none;
+}
+
+.select-container option {
+  color: black;
+}
+
+.cart-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.cover-img {
+  position: relative;
+  width: 100vw;
+  background-color: red;
+  height: 80vh;
+  background-image: url(./assets/top-view-mechanical-keyboard-with-aesthetic-design_1287624-45252.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--main-color);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.cover-button {
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  z-index: 50;
+  color: white;
+}
+
+.cover-button a {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.product {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product img {
+  width: 100%;
+  aspect-ratio: 6/4;
+}
+
+.pre-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8b68;
+  width: 115px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.product-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.product-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-title p {
+  color: #818181;
+  font-size: 18px;
+}
