@@ -68,6 +68,7 @@ button {
   width: 100vw;
   background-color: red;
   height: 80vh;
+  background-color: #1a2456;
   background-image: url(./assets/top-view-mechanical-keyboard-with-aesthetic-design_1287624-45252.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,18 +255,18 @@ button {
     font-size: 22px;
   }
 
-  .menu{
+  .menu {
     position: absolute;
     background-color: #1a2456;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    right:0;
+    right: 0;
     top: 50px;
   }
 
-  .menu a{
+  .menu a {
     display: block;
     color: var(--main-color);
   }
@@ -275,43 +276,46 @@ button {
     color: var(--main-color);
   }
 
-  .pre-order{
+  .pre-order {
     font-size: 13px;
     width: 85px;
   }
 
-  .all-product h3{
+  .all-product h3 {
     font-size: 15px;
   }
-  .all-product p{
+
+  .all-product p {
     font-size: 12px;
   }
 
-  .console-cover h1{
+  .console-cover h1 {
     font-size: 17px;
     font-weight: 1000;
   }
-  .console-cover{
+
+  .console-cover {
     margin-left: 50px;
     margin-top: 10px;
     font-weight: 600;
   }
 
-  .footer-main{
+  .footer-main {
     display: flex;
     flex-direction: column;
   }
 
-  .footer-links{
+  .footer-links {
     font-size: 13px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .subscirbe-monogram h1{ 
+  .subscirbe-monogram h1 {
     font-size: 18px;
   }
-  .subscirbe-monogram p{
+
+  .subscirbe-monogram p {
     font-size: 13px;
   }
 }
