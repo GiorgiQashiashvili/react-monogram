@@ -1,6 +1,7 @@
 import { FaShoppingCart } from "react-icons/fa";
 import Select from "./inputs/Select";
 import Logo from "./Logo";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 function Header() {
   return (
@@ -39,11 +40,13 @@ function Header() {
         <a href="#">support</a>
         <a href="#">shop</a>
 
+        <ResponsiveMenu />
+
         <button className="cart-btn">
           <FaShoppingCart />
         </button>
 
-        <Select
+        <Select className="usd"
           options={[
             {
               value: "1",

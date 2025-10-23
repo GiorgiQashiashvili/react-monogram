@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
   --main-color: #ff8b68;
   --hover-bg: #e9ecef;
@@ -19,7 +20,7 @@ button {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,4 +136,182 @@ button {
 .product-title p {
   color: #818181;
   font-size: 18px;
+}
+
+.center-main {
+  padding: 20px;
+}
+
+.create-console img {
+  width: 100%;
+}
+
+.console-cover {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  right: 20%;
+  font-size: 30px;
+  color: #1a2456;
+}
+
+.footer-main {
+  background-color: #1a2456;
+  padding: 20px;
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+}
+
+.monogram-links {
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscirbe-monogram {
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-input {
+  display: flex;
+  gap: 20px;
+}
+
+.email-input input {
+  padding: 7px;
+  outline: none;
+  border: 1px solid var(--main-color);
+  background: transparent;
+  color: white;
+}
+
+.email-input button {
+  border-radius: 15px;
+  width: 100px;
+  color: black;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  color: var(--main-color);
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+
+@media (max-width:640px) {
+  .header {
+    height: 60px;
+    right: 4px;
+  }
+
+  .header-left svg {
+    width: 135px;
+  }
+
+  .cover-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .header-right a,
+  .header-right .select-container {
+    display: none;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 20px;
+  }
+
+  .cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cover-img {
+    height: 400px;
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .menu{
+    position: absolute;
+    background-color: #1a2456;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    right:0;
+    top: 50px;
+  }
+
+  .menu a{
+    display: block;
+    color: var(--main-color);
+  }
+
+  .menu .select-container {
+    display: block;
+    color: var(--main-color);
+  }
+
+  .pre-order{
+    font-size: 13px;
+    width: 85px;
+  }
+
+  .all-product h3{
+    font-size: 15px;
+  }
+  .all-product p{
+    font-size: 12px;
+  }
+
+  .console-cover h1{
+    font-size: 17px;
+    font-weight: 1000;
+  }
+  .console-cover{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .footer-main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links{
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .subscirbe-monogram h1{ 
+    font-size: 18px;
+  }
+  .subscirbe-monogram p{
+    font-size: 13px;
+  }
 }

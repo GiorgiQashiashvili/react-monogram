@@ -1,4 +1,3 @@
-import mini from "../../assets/Everyday-Bundle-Mocks-final_1920x1281_crop_center.jpg.webp";
 
 function Product({ name, description, isPreOrder, isSoldOut, image }) {
   return (
